@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liste des Produits</title>
-  <script src="static/js/app.js" defer></script> 
-  <style>
-    .product {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-    }
-
-    .product h3 {
-      margin: 0;
-    }
-
-    .product p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits</title>
+    <script  src="static/js/app.js"  defer></script>  <!-- Lien vers app.js -->
 </head>
 <body>
-  <h1>Liste des Produits</h1>
+    <h1>Liste des produits</h1>
+    <ul id="product-list"></ul>
 
-  <div id="products-container"></div>
-
+    <h2>Ajouter un produit</h2>
+    <form id="add-product-form">
+        <input type="text" id="product-name" placeholder="Nom du produit" required>
+        <input type="number" id="product-price" placeholder="Prix du produit" required>
+        <input type="number" id="product-stock" placeholder="Stock du produit" required>
+        <button type="submit">Ajouter le produit</button>
+    </form>
 </body>
 </html>
-
+ 
